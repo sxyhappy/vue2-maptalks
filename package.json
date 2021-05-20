@@ -8,7 +8,8 @@
     "serve": "npm run build -- -w",
     "build": "rollup -c",
     "build:doc": "vuepress build docs",
-    "lint": "eslint --ext .js,.vue --ignore-path .eslintignore . --fix"
+    "lint": "eslint --ext .js,.vue --ignore-path .eslintignore . --fix",
+    "deploy:docs": "deploy.sh"
   },
   "typings": "types/index.d.ts",
   "repository": {

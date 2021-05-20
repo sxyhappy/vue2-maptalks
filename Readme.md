@@ -1,6 +1,9 @@
 # vue2-maptalks
 
-Maptalks Vue2 实现
+vue2-maptalks 是 [vue](https://vuejs.org/) 和 [maptalks](https://maptalks.org/) 的实现
+
+## Links
+[API 文档](https://sxyhappy.github.io/vue2-maptalks/)
 
 ##  安装
 
@@ -76,3 +79,6 @@ yarn
 # run dev
 npm run dev
 ```
+
+## LICENSE
+[MIT](LICENSE)

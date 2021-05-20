@@ -1,8 +1,8 @@
 module.exports = {
   title: 'Vue2 MapTalks',
   description: 'MapTalks Vue2实现',
+  base: '/vue2-maptalks/',
   head: [
-    // ['script', { src: '/points.js' }],
   ],
   themeConfig: {
     sidebar: {
