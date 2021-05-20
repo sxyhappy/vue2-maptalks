@@ -20,10 +20,10 @@ yarn add vue2-maptalks maptalks
 ```js
 // main.js
 import Vue from 'vue';
-import {Vue2MapTalks} from 'vue2-maptalks';
+import {Vue2Maptalks} from 'vue2-maptalks';
 import 'maptalks/dist/maptalks.css';
 
-Vue.use(Vue2MapTalks);
+Vue.use(Vue2Maptalks);
 ```
 
 ```html
