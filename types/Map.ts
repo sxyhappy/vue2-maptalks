@@ -1,0 +1,54 @@
+import Vue from "vue";
+
+export declare class Map extends Vue {
+  name: 'mt-map';
+  center: object | Array<number>;
+  zoom: number;
+  minZoom: number;
+  maxZoom: number;
+  spatialReference: object;
+  maxExtent: object;
+  centerCross: boolean;
+  seamlessZoom: boolean;
+  zoomInCenter: boolean;
+  zoomOrigin: Array<number>;
+  zoomAnimation: boolean;
+  zoomAnimationDuration: number;
+  panAnimation: boolean;
+  panAnimationDuration: number;
+  zoomable: boolean;
+  enableInfoWindow: boolean;
+  hitDetect: boolean;
+  hitDetectLimit: number;
+  fpsOnInteracting: number;
+  layerCanvasLimitOnInteracting: number;
+  fixCenterOnResize: boolean;
+  maxPitch: number;
+  maxVisualPitch: number;
+  viewHistory: boolean;
+  viewHistoryCount: number;
+  draggable: boolean;
+  dragPan: boolean;
+  dragRotate: boolean;
+  dragPitch: boolean;
+  dragRotatePitch: boolean;
+  touchGesture: boolean;
+  touchZoom: boolean;
+  touchRotate: boolean;
+  touchPitch: boolean;
+  touchZoomRotate: boolean;
+  doubleClickZoom: boolean;
+  scrollWheelZoom: boolean;
+  geometryEvents: boolean;
+  control: boolean;
+  attribution: object | boolean;
+  zoomControl: object | boolean;
+  scaleControl: object | boolean;
+  overviewControl: object | boolean;
+  fog: boolean;
+  fogColor: Array<number>;
+  renderer: 'canvas' | 'webgl';
+  devicePixelRatio: number;
+
+  getMap(): any;
+}

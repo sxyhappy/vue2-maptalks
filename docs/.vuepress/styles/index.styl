@@ -1,0 +1,19 @@
+
+dis = 8px, 16px
+dir = 'left', 'right', 'bottom', 'top'
+
+for d in dis
+  .p-{d}
+    padding d
+  .m-{d}
+    margin d
+  for r in dir
+    rFirst = substr(r, 0, 1)
+    .p-{rFirst}-{d}
+      padding-{r} d
+    .m-{rFirst}-{d}
+      margin-{r} d
+
+.map
+  height 400px
+  width 100%
