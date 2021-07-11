@@ -14,6 +14,7 @@ import MtCircle from "./libs/geometries/MtCircle";
 import MtEllipse from "./libs/geometries/MtEllipse";
 import MtRectangle from "./libs/geometries/MtRectangle";
 import MtSector from './libs/geometries/MtSector';
+import MtTextBox from "./libs/geometries/MtTextBox";
 
 import MtMultiPoint from "./libs/multiGeometries/MtMultiPoint";
 import MtMultiLineString from "./libs/multiGeometries/MtMultiLineString";
@@ -51,6 +52,7 @@ const components = [
   MtEllipse,
   MtRectangle,
   MtSector,
+  MtTextBox,
 
   MtMultiPoint,
   MtMultiLineString,

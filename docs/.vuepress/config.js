@@ -23,6 +23,7 @@ module.exports = {
         'polygon',
         'rectangle',
         'sector',
+        'textbox',
 
         'multi-line-string',
         'multi-point',

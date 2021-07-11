@@ -21,7 +21,7 @@ sidebarDepth: 3
 ### [mt-polygon](./polygon)
 ### [mt-rectangle](./rectangle)
 ### [mt-sector](./sector)
-
+### [mt-textbox](./textbox)
 ## MultiGeometries
 ### [mt-multi-line-string](./multi-line-string)
 ### [mt-multi-point](./multi-point)
