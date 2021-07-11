@@ -62,12 +62,6 @@ export default {
         return;
       }
 
-      console.log("aaaaaa->")
-      // console.log(this.$props)
-      // console.log(this.options)
-      // console.log(this.$options);
-      console.log(mergeProps(this))
-      console.log("bbbbbb->")
       this.geometry = new TextBox(this.content,this.coordinates,this.width,this.height, mergeProps(this));
 
       bindEvent(this.geometry, this, ['ready']);
