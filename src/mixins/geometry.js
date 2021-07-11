@@ -29,8 +29,8 @@ export default {
       default: 'EPSG:4326'
     },
     draggable: {
-      type: String,
-      default: null
+      type: Boolean,
+      default: false
     },
     dragShadow: {
       type: Boolean,
