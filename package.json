@@ -27,7 +27,7 @@
   ],
   "peerDependencies": {
     "maptalks": "^0.49.4",
-    "vue": "2.6.12"
+    "vue": "2.6.14"
   },
   "devDependencies": {
     "@babel/core": "^7.14.0",
@@ -48,6 +48,6 @@
     "vuepress-plugin-demo-container": "^0.2.0",
     "vuepress-plugin-smooth-scroll": "^0.0.10",
     "maptalks": "^0.49.4",
-    "vue": "2.6.12"
+    "vue": "2.6.14"
   }
 }
