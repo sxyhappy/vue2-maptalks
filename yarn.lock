@@ -5687,9 +5687,9 @@ map-visit@^1.0.0:
     object-visit "^1.0.0"
 
 maptalks@^0.49.4:
-  version "0.49.4"
-  resolved "https://registry.yarnpkg.com/maptalks/-/maptalks-0.49.4.tgz#124d41745a543267c01e99f4f5246421b52992e4"
-  integrity sha512-Hbsw5P4p2iEKDDnORkKrY2tzbVtIwNJpGk6WEZPi20KAbqWhrh6h8vnosq4nQDblBizR8+cffFXr4UZ+Y2lC3w==
+  version "0.49.5"
+  resolved "https://registry.yarnpkg.com/maptalks/-/maptalks-0.49.5.tgz#5701a701ca3ee2311c8fbadb4babe254af32436c"
+  integrity sha512-mggtZfsEBtg3PAEWX/6ArxdInRXvOYBD98V9mwRkp3t/Bva1xsNTbGpvcTcxcF2+KwL5QE8i6XvWBPv57m/c1Q==
   dependencies:
     "@maptalks/feature-filter" "^1.0.0"
     "@maptalks/function-type" "^1.2.3"
