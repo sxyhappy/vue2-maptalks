@@ -61,18 +61,22 @@ export default {
   methods: {
     setVisible(val) {
       if (val && this.uiComponent) {
+        this.toggleEl(true);
         this.uiComponent.show();
         this.$emit('visible', true);
       }
       if (!val && this.uiComponent) {
+        this.toggleEl();
         this.uiComponent.hide();
         this.$emit('visible', false);
       }
     },
     showEnd() {
+      this.toggleEl(true);
       this.$emit('update:visible', true)
     },
     hide() {
+      this.toggleEl();
       this.$emit('update:visible', false)
     },
     setSlotToContent() {
@@ -83,6 +87,11 @@ export default {
     bindVisibleEvent() {
       this.uiComponent.addEventListener('showend', this.showEnd);
       this.uiComponent.addEventListener('hide', this.hide);
+    },
+    toggleEl(display) {
+      if (!this.$el) return;
+
+      this.$el.style = display ? 'display: block' : 'display: none';
     }
   },
   beforeDestroy() {
