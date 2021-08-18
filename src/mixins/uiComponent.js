@@ -71,8 +71,10 @@ export default {
         this.$emit('visible', false);
       }
     },
-    showEnd() {
+    showStart() {
       this.toggleEl(true);
+    },
+    showEnd() {
       this.$emit('update:visible', true)
     },
     hide() {
@@ -85,6 +87,7 @@ export default {
       }
     },
     bindVisibleEvent() {
+      this.uiComponent.addEventListener('showstart', this.showStart);
       this.uiComponent.addEventListener('showend', this.showEnd);
       this.uiComponent.addEventListener('hide', this.hide);
     },
