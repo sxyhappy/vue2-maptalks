@@ -1,6 +1,6 @@
 {
   "name": "vue2-maptalks",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "vue2 maptalks",
   "main": "./dist/vue2-maptalks.js",
   "scripts": {
