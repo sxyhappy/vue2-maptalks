@@ -8,8 +8,6 @@
 import Vue from "vue";
 import { VectorLayer } from 'maptalks';
 
-const vectorLayerProvide = Vue.observable({layer: null});
-
 import map from '../../mixins/map';
 import options from "../../mixins/options";
 import layer from "../../mixins/layer";
@@ -20,7 +18,7 @@ export default {
   mixins: [map, options, layer],
   provide() {
     return {
-      vectorLayerProvide
+      vectorLayerProvide: this.vectorLayerProvide
     }
   },
   props: {
@@ -75,6 +73,11 @@ export default {
       default: 'canvas'
     },
   },
+  data() {
+    return {
+      vectorLayerProvide: Vue.observable({layer: null})
+    }
+  },
   watch: {
     geometries: {
       handler(val) {
@@ -101,7 +104,7 @@ export default {
       bindEvent(this.layer, this, ['ready']);
       watchProps(this, this.layer, 'geometries', this.mergeOptions);
 
-      vectorLayerProvide.layer = this.layer;
+      this.vectorLayerProvide.layer = this.layer;
       this.layer.addTo(this.map);
       this.$emit('ready', this.layer, this.map);
     },
